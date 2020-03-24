@@ -2,7 +2,11 @@
 
 ### Introduction
 
-It is a demo on WordPress shortcode which includes a slider plugin with jQuery slick slider.
+RT-Contributors is a wordpress plugin which allows user (administrator) assign contributors to a post.
+
+  - Option of checkbox at backend
+  - You can select multipe users
+  - On front end users with their gravatar will be dislayed
 
 
 ### Prerequisites
@@ -34,15 +38,10 @@ To install this plugin, you will need to setup wordpress project in your compute
 ### How to use it ?
 
 
- - In Settings menu of wordpress dashboard area, you will find **RT Slider** submenu.
- - Click on **RT Slider** .
- - Create your slider by click on sliders (Add same as category).
- - Set general and pagination settings and click on save slider.
- - Now Create post and select your slider.
- - Upload image as feature image.
- - You can reorder post according to your choice.
- - To display this slider in any post/page, you just need to use **[rt_slideshow slider='category-slug']** shortcode in your post/page.
- 
+ - In post edit section , you will see metabox called **RT Contributors**
+ - List of authors will be displayed there.
+ - Select authors you want to display for selected post/page and update your post/page.
+ - Click on Permalink of post/page to see selected contributors at the end of a post/page.
 
 ### Author
 
