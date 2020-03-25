@@ -1,0 +1,9 @@
+#post_contributors li {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+#post_contributors li img {
+    margin: auto;
+}

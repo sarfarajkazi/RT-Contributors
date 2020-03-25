@@ -6,11 +6,11 @@ if (!defined('ABSPATH')) {
 /**
  * Handle all Admin Requests
  *
- * @class rtc_admin
+ * @class rtcr_admin
  * @since 1.0.0
  * @author Sarfaraj Kazi
  */
-class rtc_admin
+class rtcr_admin
 {
 
     /**
@@ -18,17 +18,17 @@ class rtc_admin
      */
     public function __construct()
     {
-        $this->rtc_admin_includes();
+        $this->rtcr_admin_includes();
     }
 
     /**
      * include admin assests file
      */
-    public function rtc_admin_includes()
+    public function rtcr_admin_includes()
     {
-        include_once RTC_PLUGIN_PATH . 'includes/admin/plugin_admin_assets.php';
-        include_once RTC_PLUGIN_PATH . 'includes/admin/plugin_admin_action_handler.php';
+        //include_once RTCR_PLUGIN_PATH . 'includes/admin/plugin_admin_assets.php';
+        include_once RTCR_PLUGIN_PATH . 'includes/admin/plugin_admin_action_handler.php';
     }
 }
 
-return new rtc_admin();
+return new rtcr_admin();

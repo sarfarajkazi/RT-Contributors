@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: RTSlider
+Plugin Name: RT Contributors
 Plugin URI: http://sarfarajkazi.com
-Description: A demo on WordPress shortcode which includes a slider plugin with jQuery slick slider.
+Description: A demo on WordPress shortcrode which includes a slider plugin with jQuery slick slider.
 Version: 1.0.0
 Author: Sarfaraj Kazi
 Author URI: http://sarfarajkazi.com
@@ -13,31 +13,31 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-// Define RTC_PLUGIN_FILE.
-if (!defined('RTC_PLUGIN_FILE')) {
-    define('RTC_PLUGIN_FILE', __FILE__);
+// Define RTCR_PLUGIN_FILE.
+if (!defined('RTCR_PLUGIN_FILE')) {
+    define('RTCR_PLUGIN_FILE', __FILE__);
 }
 
-// Include the main RTC class.
-if (!class_exists('RTC')) {
+// Include the main RTCR class.
+if (!class_exists('RTCR')) {
     include_once dirname(__FILE__) . '/includes/plugin_class_file.php';
 }
 
 /**
- * Main instance of RTC .
+ * Main instance of RTCR .
  *
- * Returns main instance of RTC  to prevent the need to use globals.
+ * Returns main instance of RTCR  to prevent the need to use globals.
  *
- * @return RTC
+ * @return RTCR
  * @since 1.0.0
  */
-function RT()
+function RTCR()
 {
-    return RTC::rtc_instance();
+    return RTCR::rtcr_instance();
 }
-$GLOBALS['RTC'] = RT();
+$GLOBALS['RTCR'] = RTCR();
 
-function pr($data = false, $flag = false, $display = false)
+function rtcr_pr($data = false, $flag = false, $display = false)
 {
     if (empty($display)) {
         echo "<pre class='direct_display'>";
