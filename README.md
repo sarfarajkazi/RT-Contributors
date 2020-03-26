@@ -1,4 +1,4 @@
-﻿# RT-Slider
+﻿# RT-Contributors
 
 ### Introduction
 
@@ -45,7 +45,7 @@ To install this plugin, you will need to setup wordpress project in your compute
 
 ### Author
 
-**[Sarfaraj Kazi]** 
+**Sarfaraj Kazi** 
 
 > **Social Presence**
 
