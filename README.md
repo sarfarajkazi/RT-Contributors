@@ -11,7 +11,9 @@ RT-Contributors is a wordpress plugin which allows user (administrator) assign c
 
 ### Prerequisites
 
-To install this plugin, you will need to setup wordpress project in your computer.
+- To install this plugin, you will need to setup wordpress project in your computer.
+- Go to Settings menu of a wordpress dashboard -> Discussion and change default avatar for users without a custom avatar of their own.
+- Add new users having role author. Go to USERS -> add new  -> select role 'author'.
 
 
 ### Installing
