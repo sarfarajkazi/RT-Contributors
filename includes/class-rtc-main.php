@@ -53,10 +53,10 @@ final class RTC {
      */
     function rtc_define_constants() {
 
-        $this->rtc_define("RTC_PLUGIN_URL", trailingslashit(plugin_dir_url(__DIR__)));
-        $this->rtc_define("RTC_PLUGIN_PATH", trailingslashit(plugin_dir_path(__DIR__)));
-        $this->rtc_define("RTC_ADMIN_TEMPLATES", trailingslashit(RTC_PLUGIN_PATH . 'includes/admin/templates/'));
-        $this->rtc_define("RTC_ADMIN_AJAX_URL", admin_url('admin-ajax.php'));
+        $this->rtc_define('RTC_PLUGIN_URL', trailingslashit(plugin_dir_url(__DIR__)));
+        $this->rtc_define('RTC_PLUGIN_PATH', trailingslashit(plugin_dir_path(__DIR__)));
+        $this->rtc_define('RTC_ADMIN_TEMPLATES', trailingslashit(RTC_PLUGIN_PATH . 'includes/admin/templates/'));
+        $this->rtc_define('RTC_ADMIN_AJAX_URL', admin_url('admin-ajax.php'));
         $this->rtc_define("RTC_SITE_URL", trailingslashit(site_url()));
         $this->rtc_define('RTC_NAME', 'RT Contributors');
     }

@@ -18,14 +18,14 @@ if (!class_exists('rtc_action_handler_admin')):
          * Constructor.
          */
         public function __construct() {
-            add_action('add_meta_boxes', array($this, "rtc_create_meta_box"));
+            add_action('add_meta_boxes', array($this, 'rtc_create_meta_box'));
             add_action('save_post', array($this, 'rtc_save_metabox'), 10, 1);
         }
 
         function rtc_create_meta_box() {
             $user = wp_get_current_user();
             if (count(array_intersect(array('author', 'administrator', 'editor'), (array) $user->roles)) > 0) {
-                add_meta_box('rtc_metabox', __(RTC_NAME, 'rt-contributors'), array($this, "rtc_display_meta_box"), array('post'), 'side', 'high');
+                add_meta_box('rtc_metabox', __(RTC_NAME, 'rt-contributors'), array($this, 'rtc_display_meta_box'), array('post'), 'side', 'high');
             }
         }
 
@@ -56,11 +56,11 @@ if (!class_exists('rtc_action_handler_admin')):
          */
         function rtc_save_metabox($id) {
             $post_type = get_post_type($id);
-            if ("post" != $post_type) {
+            if ('post' != $post_type) {
                 return;
             }
 
-            $rtc_author_options = filter_input(INPUT_POST, "rtc_author_options");
+            $rtc_author_options = filter_input(INPUT_POST, 'rtc_author_options');
             if (wp_verify_nonce($rtc_author_options, 'save_author_options')) {
                 $post_authors = filter_input(INPUT_POST, 'post_authors', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
                 $prev_users = get_post_meta($id, 'post_contributors', true);
